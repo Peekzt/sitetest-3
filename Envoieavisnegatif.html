@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exprimez Votre Avis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="Envoieavisnegatif.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="feedback-container">
-        <h1 class="feedback-title">Exprimez ce qui ne va pas</h1>
-        <textarea class="feedback-textarea" placeholder="Votre message..."></textarea>
-        <button class="submit-btn">Envoyer</button>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exprimez Votre Avis</title>
+  <link rel="stylesheet" href="Envoieavisnegatif.css">
+</head>
+<body>
+  <div class="container">
+    <div class="feedback-container">
+      <h1 class="feedback-title">Exprimez ce qui ne va pas</h1>
+      <!-- Formulaire pour envoyer l'avis -->
+      <form action="https://formspree.io/f/mrbglglb" method="POST">
+        <textarea name="feedback" class="feedback-textarea" placeholder="Votre message..." required></textarea>
+        <input type="email" name="email" placeholder="Votre adresse e-mail (optionnel)" class="feedback-textarea" />
+        <button type="submit" class="submit-btn">Envoyer</button>
+      </form>
     </div>
-  </body>
+  </div>
+</body>
 </html>
